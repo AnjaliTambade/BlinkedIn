@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkedIn - Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---------------nav-bar------------------->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+            <div class="search-box">
+                <img src="./images/search.png" alt="search">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="./images/home.png" alt="home"><span>Home</span></a></li>
+                <li><a href="#"><img src="./images/network.png" alt="home"><span>My Network</span></a></li>
+                <li><a href="#"><img src="./images/jobs.png" alt="home"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="./images/message.png" alt="home"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="./images/notification.png" alt="home"><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-1.png" alt="user-1" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!----------------------------profile-dropdown-menu----------------->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.png" alt="">
+                    <div>
+                        <h3>Ballu Baidon</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png" alt="feedback">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png" alt="setting">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png" alt="help">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png" alt="display">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png" alt="logout">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!---------------------navbar-end-------------------->
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="./images/cover-pic.png" alt="cover" width="100%">
+                <div class="profile-container-inner">
+                    <img src="./images/user-1.png" alt="user" class="profile-pic">
+                    <h1>Ballu Baidon</h1>
+                    <b>Web Developer at Microsoft &#124; Former developer at DataStack and Intern at Oracale </b>
+                    <p>San Francisco, United Stats &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="./images/user-2.png" alt="user2">
+                        <span>1 mutual connection: Orlando Giggs</span>
+                    </div>
+
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="./images/connect.png" alt="connect">Connect</a>
+                        <a href="#"><img src="./images/chat.png" alt="chat">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-discription">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ratione corporis delectus
+                    repudiandae eaque animi dolore quibusdam atque natus ab fuga obcaecati, itaque maiores nemo
+                    aspernatur exercitationem rerum. Impedit, molestias.</p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+
+            <div class="profile-discription">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="./images/microsoft.png" alt="microsoft">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>Microsoft &middot; fuli-time</b>
+                        <b>Feb 2021 - present &middot; 1.5 years</b>
+                        <p>Computer programming is the process of performing a particular computation, usually by
+                            designing an executable computer programming </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="./images/slack.png" alt="slack">
+                    <div>
+                        <h3>Full Stake Developer</h3>
+                        <b>Slack &middot; fuli-time</b>
+                        <b>Feb 2018 &middot; 2.6 years</b>
+                        <p>Computer programming is the process of performing a particular computation, usually by
+                            designing an executable computer programming </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="./images/google.png" alt="google">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <b>Google Inc &middot; fuli-time</b>
+                        <b>Sept 2015 - May 2018 &middot; 2.8 years</b>
+                        <p>Computer programming is the process of performing a particular computation, usually by
+                            designing an executable computer programming </p>
+                        <hr>
+                    </div>
+                </div>
+                <a href="#" class="experience-link">Show all 4 experiences <img src="./images/right-arrow.png"
+                        alt="arrow"></a>
+            </div>
+
+            <div class="profile-discription">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="./images/stanford.png" alt="education">
+                    <div>
+                        <h3>Stanford University</h3>
+                        <b>BSEE, Electrical Engineering</b>
+                        <b>2018-2022</b>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="./images/north.png" alt="education">
+                    <div>
+                        <h3>Norhwestern University</h3>
+                        <b>Computer Science</b>
+                        <b>2015-2018</b>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="./images/mit.png" alt="education">
+                    <div>
+                        <h3>Hrarvard University</h3>
+                        <b>Senior High School</b>
+                        <b>2005-2015</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-discription">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Leadership</a>
+                <a href="#" class="skills-btn">Web Development</a>
+                <a href="#" class="skills-btn">Development</a>
+                <a href="#" class="skills-btn">Communication</a>
+                <a href="#" class="skills-btn">UI/UX</a>
+                <a href="#" class="skills-btn">Planning</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">JavaScript</a>
+                <a href="#" class="skills-btn">Python</a>
+                <a href="#" class="skills-btn">Enterprenuorship</a>
+            </div>
+
+            <div class="profile-discription">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">German</a>
+            </div>
+
+        </div>
+
+        <!------------------profile-sidebar------------------->
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot; </small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="./images/user-1.png" alt="user-1">
+                    <img src="./images/mi-logo.png" alt="mi">
+                </div>
+                <b>Brand and Demand in Xiomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="./images/user-3.png" alt="user">
+                    <div>
+                        <h2>Meliona Mishra</h2>
+                        <p>Founder and CEO at Gellelio Group</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="./images/user-4.png" alt="user">
+                    <div>
+                        <h2>Larence Meio </h2>
+                        <p>Founder and CEO at Dellelio Group</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="./images/user-5.png" alt="user">
+                    <div>
+                        <h2>Jorge Miche</h2>
+                        <p>Student at Callifornia University </p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="./images/user-2.png" alt="user">
+                    <div>
+                        <h2>Momo Dhotra</h2>
+                        <p>Admin of 500 WhatsApp Groups</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="./images/user-1.png" alt="user">
+                    <div>
+                        <h2>Ballu Baidon</h2>
+                        <p>Former developer at DataStack and Intern at Oracale</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="profile-footer">
+
+    <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+
+        <div class="copyright-msg">
+            <img src="./images/logo.png" alt="logo">
+            <p>Blinkedup &#169; 2024. All rights are reserved</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    <!---------------script-file-goes-here---------------->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
